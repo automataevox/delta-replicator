@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.scss'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
@@ -14,13 +14,14 @@ const Header = () => {
         </h1>
 
         <div className={styles.thirteen}>
-        <Image
-            src="/thirteen.svg"
-            alt="13"
-            width={40}
-            height={31}
-            priority
-        />
+          <Image
+              src="/thirteen.svg"
+              alt="13"
+              width={40}
+              height={31}
+              priority
+              draggable={false}
+          />
         </div>
         
     </div>
